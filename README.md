@@ -118,11 +118,9 @@ En Claude Desktop, ve a **Ajustes > Desarrollador > Editar configuración**. Edi
   }
 }
 ```
-*Importante: Usa doble barra `\\` en las rutas y reinicia la aplicación al finalizar*.
-
+*Importante: Usa doble barra `\\` en las rutas y reinicia la aplicación al finalizar.
              Reemplaza TU_USUARIO por tu nombre de usuario de Windows (ej. jeler).
-             
-             Reemplaza TU_IP_KALI por la IP real de Kali.
+             Reemplaza TU_IP_KALI por la IP real de Kali.*
 
 ---
 
