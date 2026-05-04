@@ -104,7 +104,7 @@ En Claude Desktop, ve a **Ajustes > Desarrollador > Editar configuración**. Edi
     "coworkScheduledTasksEnabled": false,
     "ccdScheduledTasksEnabled": false
   },
-  `"mcpServers": {
+  "mcpServers": {
     "mcp-kali-server": {
       "command": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
       "args": [
@@ -115,7 +115,7 @@ En Claude Desktop, ve a **Ajustes > Desarrollador > Editar configuración**. Edi
       ],
       "transport": "stdio"
     }
-  }`
+  }
 }
 ```
 *Importante: Usa doble barra `\\` en las rutas y reinicia la aplicación al finalizar*.
