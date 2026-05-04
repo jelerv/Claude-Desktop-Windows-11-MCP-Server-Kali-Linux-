@@ -1,10 +1,4 @@
-Aquí tienes el contenido de tu guía convertido a formato **Markdown (.md)**, listo para ser copiado y pegado directamente en un archivo `README.md` o similar en tu repositorio de GitHub.
-
-He estructurado la información para que sea legible, profesional y fácil de seguir.
-
----
-
-# Kali Linux con IA: Guía para Claude Desktop + MCP en Windows 11
+# Kali Linux con IA: Guía para Claude Desktop en Windows 11 + MCP Server en Kali Linux
 
 [cite_start]Esta guía detalla la integración de **Claude Desktop** con un servidor **MCP (Model Context Protocol)** para ejecutar herramientas de **Kali Linux** desde Windows 11[cite: 1].
 
