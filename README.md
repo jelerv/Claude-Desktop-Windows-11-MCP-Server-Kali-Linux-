@@ -44,7 +44,7 @@ kali-server-mcp
 ```
 *El servidor correrá en `http://127.0.0.1:5000`*.
 
-Para comprobar que todo funciona hasta ahora, en otro terminal ejecuta mcp-server (esto es lo que nuestro cliente MCP, Claude Desktop, acabará ejecutando):
+Para comprobar que todo funciona hasta ahora, en otro terminal ejecuta `mcp-server` (esto es lo que nuestro cliente MCP, Claude Desktop, acabará ejecutando):
 
 ```bash
 $ mcp-server
@@ -65,8 +65,8 @@ for tool in essential_tools:
 Instala el set de herramientas que Claude utilizará:
 
 ```bash
-sudo apt install -y dirb gobuster nikto nmap enum4linux-ng hydra john metasploit-framework sqlmap wpscan wordlists [cite: 72]
-sudo gunzip -v /usr/share/wordlists/rockyou.txt.gz [cite: 73]
+sudo apt install -y dirb gobuster nikto nmap enum4linux-ng hydra john metasploit-framework sqlmap wpscan wordlists
+sudo gunzip -v /usr/share/wordlists/rockyou.txt.gz 
 ```
 
 ---
@@ -83,7 +83,7 @@ Genera llaves sin contraseña para la conexión automática:
 ```bash
 cd ~/.ssh 
 ssh-keygen.exe -t ed25519 -C "claude@kali" 
-# Nombre: llave1 (Enter) | [cite_start]Passphrase: vacío (Enter x2) 
+# Nombre: llave1 (Enter) | Passphrase: vacío (Enter x2) 
 ```
 
 ### 2.3. Vincular con Kali
@@ -99,7 +99,12 @@ En Claude Desktop, ve a **Ajustes > Desarrollador > Editar configuración**. Edi
 
 ```json
 {
-  "mcpServers": {
+  "preferences": {
+    "coworkWebSearchEnabled": true,
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false
+  },
+  `"mcpServers": {
     "mcp-kali-server": {
       "command": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
       "args": [
@@ -110,7 +115,7 @@ En Claude Desktop, ve a **Ajustes > Desarrollador > Editar configuración**. Edi
       ],
       "transport": "stdio"
     }
-  }
+  }`
 }
 ```
 *Importante: Usa doble barra `\\` en las rutas y reinicia la aplicación al finalizar*.
