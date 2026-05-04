@@ -18,7 +18,7 @@ Esta documentación se basa en los siguientes recursos:
 * **Cuenta Anthropic:** Para el uso de Claude Desktop.
 
 > [!WARNING]
-> **Seguridad:** Nunca expongas el servidor MCP directamente a internet[cite: 14]. [cite_start]Claude siempre pedirá confirmación antes de ejecutar comandos en Kali.
+> **Seguridad:** Nunca expongas el servidor MCP directamente a internet. Claude siempre pedirá confirmación antes de ejecutar comandos en Kali.
 
 ---
 
@@ -28,7 +28,7 @@ Esta documentación se basa en los siguientes recursos:
 Si no está configurado, abre una terminal en Kali y ejecuta:
 
 ```bash
-]sudo apt update [cite: 20]
+sudo apt update
 sudo apt install -y openssh-server 
 sudo systemctl enable --now ssh
 ```
@@ -44,8 +44,14 @@ kali-server-mcp
 ```
 *El servidor correrá en `http://127.0.0.1:5000`*.
 
+Para comprobar que todo funciona hasta ahora, en otro terminal ejecuta mcp-server (esto es lo que nuestro cliente MCP, Claude Desktop, acabará ejecutando):
+
+```bash
+$ mcp-server
+```
+
 ### 🛠 Corrección de Bug (Health Check)
-Existe un error conocido donde la función de verificación no encuentra las herramientas[cite: 36, 37]. [cite_start]Debes editar `mcp_server.py` en `/usr/share/mcp-kali-server`:
+Existe un error conocido donde la función de verificación no encuentra las herramientas. Debes editar `mcp_server.py` en `/usr/share/mcp-kali-server`:
 
 **Código a corregir:**
 ```python
