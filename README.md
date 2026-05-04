@@ -1,6 +1,6 @@
 # Kali Linux con IA: Guía para Claude Desktop en Windows 11 + MCP Server en Kali Linux
 
-[cite_start]Esta guía detalla la integración de **Claude Desktop** con un servidor **MCP (Model Context Protocol)** para ejecutar herramientas de **Kali Linux** desde Windows 11.
+Esta guía detalla la integración de **Claude Desktop** con un servidor **MCP (Model Context Protocol)** para ejecutar herramientas de **Kali Linux** desde Windows 11.
 
 ## 📌 Origen y Créditos
 Esta documentación se basa en los siguientes recursos:
