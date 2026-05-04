@@ -4,21 +4,21 @@
 
 ## 📌 Origen y Créditos
 Esta documentación se basa en los siguientes recursos:
-* [cite_start]La guía oficial de Kali para macOS[cite: 3].
-* [cite_start]El vídeo de YouTube "Kali Linux con IA"[cite: 4].
-* [cite_start]El paquete oficial `mcp-kali-server` de Kali Tools[cite: 5].
+* La guía oficial de Kali para macOS[cite: 3].
+* El vídeo de YouTube "Kali Linux con IA"[cite: 4].
+* El paquete oficial `mcp-kali-server` de Kali Tools[cite: 5].
 
 ---
 
 ## 🛠 Requisitos Previos
-* [cite_start]**Kali Linux:** Instalado y en ejecución (VM, Cloud o Bare-metal)[cite: 7].
-* [cite_start]**Conectividad:** Debe estar en la misma red que Windows 11 y ser accesible por IP[cite: 8].
-* [cite_start]**Windows 11:** Sistema actualizado[cite: 9].
-* [cite_start]**SSH:** Sin firewalls bloqueando el puerto 22[cite: 11].
-* [cite_start]**Cuenta Anthropic:** Para el uso de Claude Desktop[cite: 12].
+* **Kali Linux:** Instalado y en ejecución (VM, Cloud o Bare-metal)[cite: 7].
+* **Conectividad:** Debe estar en la misma red que Windows 11 y ser accesible por IP[cite: 8].
+* **Windows 11:** Sistema actualizado[cite: 9].
+* **SSH:** Sin firewalls bloqueando el puerto 22[cite: 11].
+* **Cuenta Anthropic:** Para el uso de Claude Desktop[cite: 12].
 
 > [!WARNING]
-> [cite_start]**Seguridad:** Nunca expongas el servidor MCP directamente a internet[cite: 14]. [cite_start]Claude siempre pedirá confirmación antes de ejecutar comandos en Kali[cite: 16].
+> **Seguridad:** Nunca expongas el servidor MCP directamente a internet[cite: 14]. [cite_start]Claude siempre pedirá confirmación antes de ejecutar comandos en Kali[cite: 16].
 
 ---
 
